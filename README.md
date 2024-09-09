@@ -1,9 +1,17 @@
-## TODO APP (MERN)
+# Todo App (MERN)
 
-This project contains a simple TODO application.
+A simple full-stack Todo application built using the MERN (MongoDB, Express, React, Node.js) stack with Zod for validation. Users can create, mark, and manage their todos.
 
-It has the following features-
+## Features
 
-Anyone can create a todo
-Anyone can see their existing todos
-Anyone can mark a todo as done
+- Add new todos
+- Mark todos as completed
+- Remove todos
+- Basic backend validation with Zod
+
+## Tech Stack
+
+- **Frontend:** React.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB (Mongoose)
+- **Validation:** Zod
