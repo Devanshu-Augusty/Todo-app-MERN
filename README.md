@@ -4,9 +4,9 @@ A simple full-stack Todo application built using the MERN (MongoDB, Express, Rea
 
 ## Features
 
-- Add new todos
-- Mark todos as completed
-- Basic backend validation with Zod
+- Add new todos.
+- Mark todos as completed.
+- Basic backend validation with Zod.
 
 ## Tech Stack
 
