@@ -64,7 +64,6 @@ app.post("/completed/:todoID", async (req, res) => {
   }
 });
 
-// check
 app.listen(3000, () => {
   console.log("listening of port 3000 for now");
 });
