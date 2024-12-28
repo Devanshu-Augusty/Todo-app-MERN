@@ -4,7 +4,12 @@ const cors = require("cors");
 const { todoType, todoIDtype } = require("./type");
 const { Todo } = require("./db");
 
-app.use(cors());
+app.use(cors({
+  origin: [""], // allowing only this origin to send API request
+  methods: ["POST", "GET"],
+  credentials: true
+}));
+
 app.use(express.json());
 
 app.post("/todo", async (req, res) => {
