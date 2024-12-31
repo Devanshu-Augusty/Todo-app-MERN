@@ -17,7 +17,7 @@ function App() {
   }, []);
 
   const getTodos = async () => {
-    const response = await fetch("http://localhost:3000/todo");
+    const response = await fetch("https://todo-mern-api-one.vercel.app/todo");
     const data = await response.json();
     const allTodos = data.todos.map((todo) => {
       return {
@@ -38,7 +38,7 @@ function App() {
       },
       body: JSON.stringify(todo),
     };
-    const postResponse = await fetch("http://localhost:3000/todo", options);
+    const postResponse = await fetch("https://todo-mern-api-one.vercel.app/todo", options);
     const postData = await postResponse.json();
     getTodos();
     setTodo(intitialTodo);
@@ -53,7 +53,7 @@ function App() {
         },
       };
       const response = await fetch(
-        `http://localhost:3000/completed/${todoId}`,
+        `https://todo-mern-api-one.vercel.app/completed/${todoId}`,
         options
       );
       const data = await response.json();
