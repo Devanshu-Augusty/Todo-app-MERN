@@ -6,7 +6,7 @@ const { Todo } = require("./db");
 
 app.use(
   cors({
-    origin: [""], // allowing only this origin to send API request eg: http://localhost:3000/
+    origin: ["https://todo-mern-devanshu.vercel.app/"], // allowing only this origin to send API request eg: http://localhost:3000/
     methods: ["POST", "GET"],
     credentials: true,
   })
