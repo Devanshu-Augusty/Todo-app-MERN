@@ -14,6 +14,10 @@ app.use(
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+  res.json("Server up and running...")
+})
+
 app.post("/todo", async (req, res) => {
   try {
     const todoPayload = req.body;
