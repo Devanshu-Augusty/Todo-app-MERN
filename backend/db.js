@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+require("dotenv").config();
 
-mongoose.connect(
-  "mongodb+srv://Augus7:dev4830R@cluster0.uexew6m.mongodb.net/todo_app"
-);
+const databaseUrl = process.env.DATABASE_URL;
+
+mongoose.connect(`${databaseUrl}`);
 
 const todoSchema = new mongoose.Schema({
   name: String,
